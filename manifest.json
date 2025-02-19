@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "OpenRent Property Sorter",
+    "description": "Sort properties on OpenRent by their last updated date",
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://openrent.co.uk/*", "https://www.openrent.co.uk/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }
+  
